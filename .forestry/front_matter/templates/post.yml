@@ -21,3 +21,6 @@ fields:
 - type: file
   label: Image
   name: image
+- type: text
+  name: remote_url
+  label: Remote URL

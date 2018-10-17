@@ -1,0 +1,23 @@
+---
+label: post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: boolean
+  label: Featured
+  name: featured
+- type: select
+  name: category
+  config:
+    source:
+      type: documents
+    required: true
+  label: categories
+- type: file
+  label: Image
+  name: image

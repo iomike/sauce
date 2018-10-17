@@ -221,7 +221,14 @@ License: https://www.wowthemes.net/freebies-license/
      margin-right:5px;
 }
  .mainheading h1.sitetitle {
-     font-family:Righteous;
+     font-familey:Righteous;
+     font-family:"Molle";
+}
+.lead
+{
+    font-fameily: 'Molle', cursive;
+    font-familey:"Rock Salt";
+
 }
  .mainheading h1.posttitle {
      font-weight:700;
@@ -534,7 +541,7 @@ License: https://www.wowthemes.net/freebies-license/
      margin-bottom: 1.5rem;
 }
  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+     font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
  .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
      font-weight: 700;

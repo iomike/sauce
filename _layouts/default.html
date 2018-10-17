@@ -14,7 +14,7 @@
     
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     
-<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald%7CMolle:400i%7CRock+Salt%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
     
 <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
     
@@ -45,9 +45,9 @@
     <div class="container pr-0">    
     
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
+   <!---- <a class="navbar-brand" href="{{ site.baseurl }}/">
     <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>
+    </a> -->
     <!-- End Logo -->
   
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,28 +66,38 @@
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                <a class="nav-link" href="/">Home</a>
                 </li>
                 
+
                 {% if page.url == "/about.html" %}
                 <li class="nav-item active">
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                <a class="nav-link" href="/about">About</a>
                 </li>
-                
-                <li class="nav-item">
-                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Jekyll Version</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
+<!--  dropdown  -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
+    <div class="dropdown-menu">
+            {% assign tags_list = site.categories %}  
+            {% if tags_list.first[0] == null %}
+              {% for tag in tags_list %} 
+               <a class="dropdown-item" href="/category/{{ tag }}">{{ tag | capitalize }}</a>
+              {% endfor %}
+            {% else %}
+              {% for tag in tags_list %} 
+               <a class="dropdown-item" href="/category/{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
+              {% endfor %}
+            {% endif %}
+            {% assign tags_list = nil %}
+
+    </div>
+  </li>
+<!-- end dropdown -->
+
+
 
                 <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://www.facebook.com/wowthemesnet/"><i class="fab fa-facebook-f"></i></a>
@@ -157,11 +167,11 @@
           {% assign tags_list = site.categories %}  
           {% if tags_list.first[0] == null %}
             {% for tag in tags_list %} 
-              <a href="{{ site.baseurl }}/category/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
+              <a href="/category/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
             {% endfor %}
           {% else %}
             {% for tag in tags_list %} 
-              <a href="{{ site.baseurl }}/category/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
+              <a href="/category/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
             {% endfor %}
           {% endif %}
         {% assign tags_list = nil %}

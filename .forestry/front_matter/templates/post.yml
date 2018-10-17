@@ -24,3 +24,10 @@ fields:
 - type: text
   name: remote_url
   label: Remote URL
+- type: textarea
+  name: body
+  label: Body
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks

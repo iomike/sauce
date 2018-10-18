@@ -8,22 +8,15 @@ fields:
   name: title
   config:
     required: true
-- type: boolean
-  label: Featured
-  name: featured
-- type: select
-  name: category
-  config:
-    source:
-      type: documents
-    required: true
-  label: Tags
-- type: file
-  label: Image
-  name: image
 - type: text
   name: remote_url
   label: Remote URL
+- type: boolean
+  label: Featured
+  name: featured
+- type: file
+  label: Image
+  name: image
 - type: textarea
   name: body
   label: Body
@@ -31,5 +24,8 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+- type: tag_list
+  name: category
+  label: Tags
 pages:
 - _posts/test.md

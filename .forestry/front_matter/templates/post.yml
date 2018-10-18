@@ -17,7 +17,7 @@ fields:
     source:
       type: documents
     required: true
-  label: categories
+  label: Tags
 - type: file
   label: Image
   name: image

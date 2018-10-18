@@ -75,15 +75,19 @@
                 {% endif %}
                 <a class="nav-link" href="/about">About</a>
                 </li>
+
+<!-- test -->
+
 <!--  dropdown  -->
-<li class="nav-item dropdown">
+<li class="nav-item dropdown has-megamenu">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
-    <div class="dropdown-menu">
+    <div class="container-fluid"> <div class="row">
+    <div class="dropdown-menu" style="column-count: 4;width:100%;">
 
             {% assign tags_list = site.categories | sort %}  
             {% if tags_list.first[0] == null %}
               {% for tag in tags_list %} 
-               <a class="dropdown-item" href="/category/{{ tag | slugify }}">{{ tag }}</a>
+               <a class="dropdown-item 1" href="/category/{{ tag | slugify }}">{{ tag }}</a>
               {% endfor %}
             {% else %}
               {% for tag in tags_list %} 
@@ -92,7 +96,7 @@
             {% endif %}
             {% assign tags_list = nil %}
 
-    </div>
+    </div></div></div>
   </li>
 <!-- end dropdown -->
 

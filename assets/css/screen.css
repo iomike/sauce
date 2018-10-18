@@ -8,6 +8,9 @@ License: https://www.wowthemes.net/freebies-license/
  .mainheading {
      padding:1rem 0rem;
 }
+.dropdown.has-megamenu{
+    position:static;
+    }
  a {
      color:#00ab6b;
      transition:all 0.2s;
@@ -197,6 +200,11 @@ License: https://www.wowthemes.net/freebies-license/
      border-radius:30px;
      cursor:pointer;
 }
+
+.dropdown-item:focus, .dropdown-item:hover a:hover
+{
+    color:rgba(0,171,107, 0.1)!important;
+}
  .mediumnavigation .form-inline .btn:hover,.mediumnavigation .form-inline .btn:active {
      background:transparent;
      color:green;
@@ -205,8 +213,9 @@ License: https://www.wowthemes.net/freebies-license/
      font-weight:500;
 }
  .mediumnavigation .dropdown-menu {
-     border:1px solid rgba(0,0,0,0.08);
-     margin:.5rem 0 0;
+     border:1px solid rgba(0,0,0,0.5);
+     margin:0;
+     background-color:rgba(0,171,107, 0.1);
 }
  .mediumnavigation .nav-item,.dropdown-menu {
      font-size:0.9rem;

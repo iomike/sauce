@@ -36,7 +36,7 @@ fields:
   config:
     required: true
 pages:
-- _posts/mushroom-ragù.html
+- _posts/2018-10-17-mushroom-ragù.html
 - _posts/2015-08-27-caprese-salad.html
 - _posts/2016-02-07-baked-potatoes-with-wild-mushroom-ragu.html
 - _posts/2015-08-26-grilled-deviled-chicken-poulet-a-la-moutarde.html

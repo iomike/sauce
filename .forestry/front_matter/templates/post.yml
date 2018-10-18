@@ -14,6 +14,9 @@ fields:
 - type: boolean
   label: Featured
   name: featured
+- type: tag_list
+  name: categories
+  label: Categories
 - type: file
   label: Image
   name: image
@@ -24,9 +27,6 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
-- type: tag_list
-  name: categories
-  label: Tags
 pages:
 - _posts/2017-11-17-mini-sugar-coated-doughnuts.html
 - _posts/2018-04-20-why-jianbing-is-chinas-most-popular-street-breakfast.html

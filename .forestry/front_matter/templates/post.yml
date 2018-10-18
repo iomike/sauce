@@ -28,4 +28,5 @@ fields:
   name: category
   label: Tags
 pages:
+- _posts/2015-12-24-pasta-carbonara.html
 - _posts/test.md

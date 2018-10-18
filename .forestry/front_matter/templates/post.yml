@@ -30,6 +30,11 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+- type: text
+  label: Date
+  name: date
+  config:
+    required: true
 pages:
 - _posts/2016-12-18-hearty-chickpea-curry.html
 - _posts/2017-11-17-mini-sugar-coated-doughnuts.html

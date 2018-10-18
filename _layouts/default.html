@@ -83,11 +83,11 @@
             {% assign tags_list = site.categories | sort %}  
             {% if tags_list.first[0] == null %}
               {% for tag in tags_list %} 
-               <a class="dropdown-item" href="/category/{{ tag }}">{{ tag | capitalize }}</a>
+               <a class="dropdown-item" href="/category/{{ tag | slugify }}">{{ tag }}</a>
               {% endfor %}
             {% else %}
               {% for tag in tags_list %} 
-               <a class="dropdown-item" href="/category/{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
+               <a class="dropdown-item" href="/category/{{ tag[0] | slugify }}">{{ tag[0] }}</a>
               {% endfor %}
             {% endif %}
             {% assign tags_list = nil %}
@@ -125,7 +125,7 @@
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
+    <h1 class="sitetitle"><a href="/">{{ site.name }}</a></h1>
     <p class="lead">
          {{ site.description }}
     </p>
@@ -161,18 +161,18 @@
 	<div class="d-flex h-100">
 		<div class="col-md-4 align-self-center text-center h-100">
             <div class="d-flex align-items-center justify-content-center h-100">
-			 <h2 class="d-md-block d-none align-self-center">Explore →</h2>
+			 <h2 class="d-md-block d-none align-self-center">Our Sources <i class="fas fa-arrow-circle-right"></i></h2>
             </div>
 		</div>
 		<div class="col-md-8 align-self-center text-center">
-          {% assign tags_list = site.categories %}  
+          {% assign tags_list = site.tags %}  
           {% if tags_list.first[0] == null %}
             {% for tag in tags_list %} 
-              <a href="/category/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
+              <a href="/tag/{{ tag }}">{{ tag | slugify }} {{ site.tags[tag].size }}</a>
             {% endfor %}
           {% else %}
             {% for tag in tags_list %} 
-              <a href="/category/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
+              <a href="/tag/{{ tag[0]  | slugify  }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
             {% endfor %}
           {% endif %}
         {% assign tags_list = nil %}

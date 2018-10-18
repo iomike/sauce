@@ -13,9 +13,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    
-<link href="https://fonts.googleapis.com/css?family=Oswald%7CMolle:400i%7CRock+Salt%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-    
+        
 <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
     
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
@@ -81,7 +79,8 @@
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
     <div class="dropdown-menu">
-            {% assign tags_list = site.categories %}  
+
+            {% assign tags_list = site.categories | sort %}  
             {% if tags_list.first[0] == null %}
               {% for tag in tags_list %} 
                <a class="dropdown-item" href="/category/{{ tag }}">{{ tag | capitalize }}</a>
@@ -96,6 +95,8 @@
     </div>
   </li>
 <!-- end dropdown -->
+
+<!-- junk -->
 
 
 

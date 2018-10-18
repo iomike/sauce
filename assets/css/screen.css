@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Open+Sans|Rock+Salt');
 /* 
 Template Name: Mediumish 
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
@@ -52,8 +53,8 @@ License: https://www.wowthemes.net/freebies-license/
  .section-title h2 {
      border-bottom:1px solid rgba(0,0,0,.125);
      margin-bottom:25px;
-     font-weight:700;
-     font-size:1.4rem;
+     font-weight:500;
+     font-size:1.7rem;
      margin-bottom:27px;
 }
  .section-title span {
@@ -221,14 +222,11 @@ License: https://www.wowthemes.net/freebies-license/
      margin-right:5px;
 }
  .mainheading h1.sitetitle {
-     font-familey:Righteous;
-     font-family:"Molle";
+    font-family: 'Rock Salt', cursive;
 }
-.lead
+.lead, .section-title h2
 {
-    font-fameily: 'Molle', cursive;
-    font-familey:"Rock Salt";
-
+    font-family: 'Covered By Your Grace', cursive;
 }
  .mainheading h1.posttitle {
      font-weight:700;

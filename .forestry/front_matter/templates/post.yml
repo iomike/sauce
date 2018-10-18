@@ -17,6 +17,9 @@ fields:
 - type: tag_list
   name: categories
   label: Categories
+- type: tag_list
+  label: Tags
+  name: tags
 - type: file
   label: Image
   name: image
@@ -27,7 +30,14 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+- type: text
+  label: Date
+  name: date
+  config:
+    required: true
 pages:
+- _posts/2018-01-20-how-to-make-new-orleans-red-beans-and-rice.html
+- _posts/2015-12-24-margherita-pizza-recipe.html
 - _posts/2016-12-18-hearty-chickpea-curry.html
 - _posts/2017-11-17-mini-sugar-coated-doughnuts.html
 - _posts/2018-04-20-why-jianbing-is-chinas-most-popular-street-breakfast.html

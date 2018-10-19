@@ -30,12 +30,6 @@ fields:
     wysiwyg: false
     schema:
       format: html-blocks
-- type: text
-  label: Date
-  name: date
-  config:
-    required: true
-- type: include
 - type: select
   name: layout
   config:
@@ -44,6 +38,11 @@ fields:
     options:
     - post
   label: Layout
+- type: text
+  label: Date
+  name: date
+  config:
+    required: true
 pages:
 - _posts/2018-10-19-welcome-friends.html
 - _posts/2018-10-17-mushroom-ragù.html

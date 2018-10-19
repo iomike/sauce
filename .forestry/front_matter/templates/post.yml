@@ -24,10 +24,10 @@ fields:
   label: Image
   name: image
 - type: textarea
-  name: bit
-  label: Bit
+  name: intro
+  label: Intro
   config:
-    wysiwyg: true
+    wysiwyg: false
     schema:
       format: html-blocks
 - type: text

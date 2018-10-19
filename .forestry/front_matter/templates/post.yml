@@ -24,10 +24,10 @@ fields:
   label: Image
   name: image
 - type: textarea
-  name: body
-  label: Body
+  name: intro
+  label: Intro
   config:
-    wysiwyg: true
+    wysiwyg: false
     schema:
       format: html-blocks
 - type: text
@@ -36,9 +36,10 @@ fields:
   config:
     required: true
 pages:
+- _posts/welcome-friends.html
 - _posts/2018-10-17-mushroom-ragù.html
-- _posts/2015-08-27-caprese-salad.html
 - _posts/2016-02-07-baked-potatoes-with-wild-mushroom-ragu.html
+- _posts/2015-08-27-caprese-salad.html
 - _posts/2015-08-26-grilled-deviled-chicken-poulet-a-la-moutarde.html
 - _posts/2016-08-21-french-grated-carrot-salad.html
 - _posts/2017-10-29-basic-polenta-recipe.html

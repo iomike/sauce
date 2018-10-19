@@ -35,6 +35,15 @@ fields:
   name: date
   config:
     required: true
+- type: include
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    options:
+    - post
+  label: Layout
 pages:
 - _posts/2018-10-19-welcome-friends.html
 - _posts/2018-10-17-mushroom-ragù.html

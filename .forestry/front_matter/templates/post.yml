@@ -44,8 +44,8 @@ fields:
   config:
     required: true
 pages:
-- _posts/2018-10-18-welcome.md
 - _posts/2018-10-19-welcome-friends.html
+- _posts/2018-10-18-welcome.md
 - _posts/2018-10-17-mushroom-ragù.html
 - _posts/2016-02-07-baked-potatoes-with-wild-mushroom-ragu.html
 - _posts/2015-08-27-caprese-salad.html

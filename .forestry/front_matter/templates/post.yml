@@ -24,8 +24,8 @@ fields:
   label: Image
   name: image
 - type: textarea
-  name: body
-  label: Body
+  name: bit
+  label: Bit
   config:
     wysiwyg: true
     schema:
